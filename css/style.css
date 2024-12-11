@@ -15,7 +15,7 @@ body {
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 2px 0;
 }
   
 .navbar-container {
@@ -43,6 +43,10 @@ body {
     border: none;
     border-radius: 5px;
     width: 500px; 
+}
+
+.fas.fa-user-plus {
+    font-size: 30px;
 }
 
 .categories {
@@ -163,7 +167,7 @@ body {
 }
 
 .signup-btn {
-    background-color: #f39c12;  
+    background-color: #000000;  
     color: white; 
     font-size: 1rem;  
     padding: 10px 20px;  
@@ -172,7 +176,7 @@ body {
     display: flex;  
     align-items: center;  
     cursor: pointer;  
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s, color 0.3s;  
 }
 
 .signup-btn i {
@@ -181,5 +185,6 @@ body {
 }
 
 .signup-btn:hover {
-    background-color: #e67e22;  
+    background-color: #ffffff;
+    color: #000000; 
 }
