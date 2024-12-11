@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Loja Online</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class="store-name">
+        <h1>Roupas e joias</h1>
+      </div>
+      
+      <div class="search-login">
+        <input type="text" class="search-bar" placeholder="O que você procura?">
+        
+        <button class="signup-btn">
+          <i class="fas fa-user-plus"></i> Entrar ou Cadastre-se
+        </button>
+
+        <div class="cart-icon" onclick="toggleCart()">
+            <img src="/img/icons/shopping-bag (1).png" alt="Carrinho de compras">
+            <span class="cart-count" id="cart-count">0</span> 
+          </div>
+          
+          <div id="cartModal" class="cart-modal">
+            <div class="cart-modal-content">
+              <span class="close-btn" onclick="toggleCart()">&times;</span>
+              <h2>Sacola de Compras</h2>
+              <ul id="cartItems">
+                
+              </ul>
+              <div class="cart-footer">
+                <p>Total: <span id="total">R$ 0,00</span></p>
+                <button class="checkout-btn" onclick="finalizePurchase()">Finalizar Compra</button>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="categories">
+      <ul>
+        <li><a href="#">Marcas</a></li>
+        <li><a href="#">Vestuários</a></li>
+        <li><a href="#">Acessórios</a></li>
+        <li><a href="#">Joias</a></li>
+        <li><a href="#">Tenis</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/home.js"></script>
+</body>
+</html>
